@@ -1,0 +1,19 @@
+h4,h5,h6{
+	font-weight:bold;
+	text-align:center;
+	font-size:2em;
+	text-decoration:none
+}
+
+p{
+	color:rgba(0,0,0,.5);
+	font-family:Arial,calibri,helvetica;
+	font-size:20px;
+	font-weight:normal;
+	text-align:center;
+	line-height:30px;
+	text-transform:normal;
+	letter-spacing:normal;
+	word-spacing:none;
+	text-shadow:0px 0px black;
+}

@@ -1,0 +1,38 @@
+div{
+	width:100px;
+	height:100px;
+	background:#4A88F4;
+	color:#fff;
+	font-size:80px;
+	float:left;
+	
+}
+
+.caja{
+	position:relative;
+	top:140px;
+	bottom:0;
+	right:0;
+	left:0;	
+}
+
+p{
+	
+	background:red;
+	color:#red;
+	
+}
+.caja_padre{
+	font-size:40px;
+	position:relative;
+	top:0;
+	bottom:0;
+	right:0;
+	left:100;
+	
+}
+
+
+
+
+

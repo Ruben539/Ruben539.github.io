@@ -1,0 +1,9 @@
+h1{
+	color:#DD1518;
+}/*a los colores sin decimales como el ejemplo de arriba es dificil colocarle la opacidad o transparencia ya que es un valor entero*/
+h2{
+	color:rgb(10,100,200);
+}/*los decimales son utilizados para controlar la intensidad del tono,el color y la mezcla a la hora de obtener un color en especifico*/
+h3{
+	color:rgba(90,10,145,.5);
+	}/*con este codigo se maneja las trasnparencia del color en el ultimo valor con los numeros 0,1,.5,.4 etc*/
