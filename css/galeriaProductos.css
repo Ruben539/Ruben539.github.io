@@ -1,0 +1,67 @@
+body{
+	background-image: linear-gradient(-45deg, #e3ddd9 0%, #C70039 60%);
+	font-family: 'Raleway', sans-serif; 	
+}
+
+/* Estilos para el menu de Navegacion */
+.menu{
+	background: transparent;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    margin-bottom: 10px;
+    outline: none;
+    
+}
+
+.menu a{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 26px;
+    margin: 0 10px;
+    transition: .5s ease all;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    transform: translateY(18px);
+    background-color: var(--purple-light);
+}
+.titulo{
+	font-size: 35px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	color: #fff;
+	font-family: 'Dancing Script', cursive;
+
+
+}
+
+.galeria img{
+	box-shadow: 0 8px -4px rgba(0,0,0,.6);
+	border-radius: 20px;
+}
+
+.materialbox-caption{
+	bottom: 30px;
+	right: 0;
+	width: 40%;
+	height: auto;
+	padding: 10px;
+	margin: auto;
+	background: transparent;
+	box-shadow: 5px 5px #C70039;
+	font-size: 20px;
+	color: #fff;
+	line-height: 28px;
+
+
+}
