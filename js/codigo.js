@@ -1,38 +1,23 @@
-//Comienzo del codigo JavaScrip
+$(document).ready(main);
 
-const altura = document.body.scrollHeight - window.innerHeight;
-const fondo = document.getElementById('fondo');
+var contador = 1;
 
-window.onscroll = () => {
-	const anchoFondo = (window.pageYOffset / altura) * 700;
-if (anchoFondo <= 100) {
-	fondo.style.width = anchoFondo + '%';
- }
-	
-} 
+function main() {
+    $('.menu_bar').click(function() {
+        // $('nav').toggle(); 
 
-//Codigo del Carousel
-document.addEventListener('DOMContentLoaded', () =>{
-	const elementosCarrusel = document.querySelectorAll('.carousel');
+        if (contador == 1) {
+            $('nav').animate({
+                left: '0'
+            });
+            contador = 0;
+        } else {
+            contador = 1;
+            $('nav').animate({
+                left: '-100%'
+            });
+        }
 
-	M.Carousel.init(elementosCarrusel, {
-		duration:150,
-		dist:-80,
-		shift:5,
-		padding:5,
-		numVisible:3,
-		indicators:true,
-		noWrap:false
+    });
 
-	});
-});
-
-//Codigo LightBox de Productos
-document.addEventListener('DOMContentLoaded', () =>{
-	const LightBox = document.querySelectorAll('.materializeBoxed');
-
-	M.Materialbox.init(LightBox,{
-		inDuration :500,
-		outDuration: 1000
-	});
-});
+};
