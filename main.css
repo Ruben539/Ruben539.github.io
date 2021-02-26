@@ -253,7 +253,7 @@ p{
 
 /* Media Query para el tamaño de los titulos */
 
-@media screen and(max-width: 992px){
+@media screen and(max-width: 700px){
 	p{
 		font-size: 18px;
 	}
