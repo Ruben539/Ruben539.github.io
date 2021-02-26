@@ -1,18 +1,40 @@
-body {
-    margin :0;
-    font-family: sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-header {
+
+.fondo {
     width: 100%;
-    background: #C70009;
+    height: 60vh;
+    background-image: url(img/inspeccion.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.texto {
+    width: calc(100vw - 20px);
+    height: 70vh;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C70009;
+    mix-blend-mode: multiply;
 }
 
 #btn-menu {
     display: none;
 }
 
-header label {
+ label {
     display: none;
     width: 30px;
     height: 30px;
@@ -20,41 +42,56 @@ header label {
     
 }
 
-header label img {
+ label img {
     width: 30px;
     height: 30px;
     background: none;
     display: block;
 }
 
-header label:hover {
+ label:hover {
     cursor: pointer;
     background: rgba(0,0,0,0.3);
 }
- .menu ul {
+
+.menu {
+    background-color: #C70009;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    margin-bottom: 60px
+}
+.menu ul {
     margin: 0;
     list-style: none;
     padding: 0;
     display: flex;
- }
+}
 
- .menu li {
-   margin.20px;
- }
+.menu li {
+ margin.20px;
+}
 
 .menu li:hover{
     background: rgba(0,0,0,0.3);
 
 }
- .menu li a{
+.menu li a{
     display: block;
     padding: 15px 20px;
     color: #fff;
     text-decoration: none;
- }
+}
 
 @media screen and (max-width:800px){
-    header label{
+     label{
         display: block;
     }
 
