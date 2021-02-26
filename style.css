@@ -1,50 +1,51 @@
 @font-face {
-    font-family: 'icomoon';
-    src: url('fonts/icomoon.eot?tat4hh');
-    src: url('fonts/icomoon.eot?tat4hh#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?tat4hh') format('truetype'), url('fonts/icomoon.woff?tat4hh') format('woff'), url('fonts/icomoon.svg?tat4hh#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?v253ky');
+  src:  url('fonts/icomoon.eot?v253ky#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?v253ky') format('truetype'),
+    url('fonts/icomoon.woff?v253ky') format('woff'),
+    url('fonts/icomoon.svg?v253ky#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-home2:before {
-    content: "\e901";
+  content: "\e901";
 }
-
-.icon-envelop:before {
-    content: "\e945";
+.icon-paint-format:before {
+  content: "\e90c";
 }
-
-.icon-rocket:before {
-    content: "\e9a5";
+.icon-price-tags:before {
+  content: "\e936";
 }
-
-.icon-briefcase:before {
-    content: "\e9ae";
+.icon-wrench:before {
+  content: "\e991";
 }
-
-.icon-menu:before {
-    content: "\e9bd";
+.icon-cogs:before {
+  content: "\e995";
 }
-
-.icon-earth:before {
-    content: "\e9ca";
+.icon-road:before {
+  content: "\e9b1";
 }
-
-.icon-cross:before {
-    content: "\ea0f";
+.icon-power:before {
+  content: "\e9b5";
+}
+.icon-radio-checked2:before {
+  content: "\ea55";
 }
