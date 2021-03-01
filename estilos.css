@@ -16,6 +16,55 @@
 
 }
 
+.fondoDesembalado{
+    width: 100vw;
+    height: 60vh;
+    background-image: url(img/Alex/images.jfif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.fondoHerreria{
+    width: 100vw;
+    height: 60vh;
+    background-image: url(img/Alex/images.jfif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.fondoPintura {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(img/Alex/images.jfif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.fondoRuedas {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(img/Alex/images.jfif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.fondoCinta{
+    width: 100vw;
+    height: 60vh;
+    background-image: url(img/Alex/images.jfif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
 .texto {
     width: calc(100vw - 20px);
     height: 90vh;
@@ -51,11 +100,11 @@
 
  label:hover {
     cursor: pointer;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.5);
 }
 
 .menu {
-    background-color: #C70009;
+    background-color: linear-gradient(to right, #F70719, #fff, #0707F7);
     width: 100%;
     position: sticky;
     top: 0;
@@ -86,7 +135,7 @@
 .menu li a{
     display: block;
     padding: 15px 20px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -115,4 +164,21 @@
     #btn-menu:checked ~ .menu{
         margin:0;
     } 
+}
+
+
+/* Estilo del Acceso */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #F70719, #fff, #0707F7);
+}
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 70px;
+  max-width: 600px;
+  height: 300px;
+  box-shadow: 2px 2px 2px 2px #343a40;
+  border-radius: 3px;    
 }

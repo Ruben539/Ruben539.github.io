@@ -1,40 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--Google Fonts-->
-    <link  href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700¡|Open+Sans:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Acceso</title>
+    
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
+    
+    <link rel="stylesheet" href="plugins/sweet_alert2/sweetalert2.min.css">
 </head>
-
 <body>
-    <header>
-        <input type="checkbox"  id="btn-menu">
-        <label for="btn-menu"><img src="img/icon-menu.png" alt=""></label>
-        
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html"><span class="icon-home2"></span>  Inicio</a></li>
-                <li><a href="Paginas/desembalado.html"><span class="icon-price-tags"></span> Desembalado</a></li>
-                <li><a href="Paginas/herreria.html"><span class="icon-power"></span>  Herreria</a></li>
-                <li><a href="Paginas/pintura.html"><span class="icon-paint-format"></span>  Pintura</a></li>
-                <li><a href="Paginas/ruedas.html"><span class="icon-radio-checked2"></span>  Ruedas</a></li>
-                <li><a href="Paginas/cinta.html"><span class="icon-cogs"></span>  Cinta</a></li>
-                <li><a href="Paginas/probado.html"><span class="icon-wrench"></span>  Insp y Control</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <h1>Inicio</h1>
-
-
+    <div id="login">
+        <h3 class="text-center text-white display-4">Gerencia Industrial</h3>
+        <div class="container">                        
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12  bg-light text-dark">
+                        <form id="formLogin" class="form" action="principal.html" method="post">
+                            <h3 class="text-center text-dark">Iniciar Sesión</h3>
+                            <div class="form-group">
+                                <label for="usuario" class="text-dark">Usuario</label><br>
+                                <input type="text" name="usuario" id="usuario" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-dark">Password</label><br>
+                                <input type="password" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="form-group text-center">                                
+                                <input type="submit" name="submit" class="btn btn-dark btn-lg btn-block" value="Conectar" src="principal.html">
+                            </div>                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="plugins/sweet_alert2/sweetalert2.all.min.js"></script>
+    <script src="codigo.js"></script>
 </body>
-
 </html>
