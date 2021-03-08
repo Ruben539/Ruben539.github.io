@@ -104,7 +104,7 @@
 }
 
 .menu {
-    background-color: linear-gradient(to right, #F70719, #fff, #0707F7);
+    background-color: #F70719;
     width: 100%;
     position: sticky;
     top: 0;
@@ -117,6 +117,11 @@
     font-style: italic;
     margin-bottom: 60px
 }
+
+.separador p,q {
+    font-size: 30px;
+}
+
 .menu ul {
     margin: 0;
     list-style: none;
@@ -135,7 +140,7 @@
 .menu li a{
     display: block;
     padding: 15px 20px;
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -172,8 +177,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #F70719, #fff, #0707F7);
-}
+  background: #fff;
 
 #login .container #login-row #login-column #login-box {
   margin-top: 70px;
@@ -182,3 +186,6 @@ body {
   box-shadow: 2px 2px 2px 2px #343a40;
   border-radius: 3px;    
 }
+
+/* Estilo del Formulario de Probado */
+

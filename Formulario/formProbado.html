@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!--Archivo Normalize.css-->
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<!--Archivo Google Fonts estilo de Letra-->                                                 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+	<!--Archivo css de estilos par la pagina-->
+	<link rel="stylesheet" type="text/css" href="../estilo.css"> 
+</head>
+<body>
+	<main>
+		<form action="" class="formulario" id="formulario">
+			<!--Grupo de Formulario de usuario-->
+		<div class="form-group" id="grupo-usuario">
+				<label for="usuario" class="form-label">Numero de Vehiculo</label>
+			<div class="form-groupInput">
+				<input class="form-input" type="text" name="usuario" id="usuario" placeholder="Ingrese su Usuario...">
+				<i class="icon-estado fas fa-times-circle"></i>
+			</div>
+			<p class="mensaje-error">Error de usuario vefique que ,tenga 4 a 16 digitos y solo puede contener numeros,letras y guion bajo</p>
+		</div>
+
+		<!--Grupo de Formulario de nombre-->
+		<div class="form-group" id="grupo-nombre">
+				<label for="nombre" class="form-label">Nombre :</label>
+			<div class="form-groupInput">
+				<input class="form-input" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre...">
+				<i class="icon-estado fas fa-times-circle"></i>
+			</div>
+			<p class="mensaje-error">Error de nombre vefique que este escrito Correctamente</p>
+		</div>
+
+		<!--Grupo de Formulario de Contraseña 1-->
+		<div class="form-group" id="grupo-password">
+				<label for="password" class="form-label">Contraseña :</label>
+			<div class="form-groupInput">
+				<input class="form-input" type="password" name="password" id="password">
+				<i class="icon-estado fas fa-times-circle"></i>
+			</div>
+			<p class="mensaje-error">Error de Contraseña vefique que este escrito Correctamente</p>
+		</div>
+
+		<!--Grupo de Formulario de Contraseña 2-->
+		<div class="form-group" id="grupo-password2">
+				<label for="password2" class="form-label">Repetir Contraseña :</label>
+			<div class="form-groupInput">
+				<input class="form-input" type="password" name="password2" id="password2">
+				<i class="icon-estado fas fa-times-circle"></i>
+			</div>
+			<p class="mensaje-error">Error de Contraseña vefique que este sean Identicas</p>
+		</div>
+
+		<!--Grupo de Formulario de Correo-->
+		<div class="form-group" id="grupo-correo">
+				<label for="correo" class="form-label">Correo electronico :</label>
+			<div class="form-groupInput">
+				<input class="form-input" type="email" name="correo" id="correo" placeholder="Ingrese su correo...">
+				<i class="icon-estado fas fa-times-circle"></i>
+			</div>
+			<p class="mensaje-error">Error de correo vefique que este escrito Correctamente</p>
+		</div>
+
+		<!--Grupo de Formulario de Telefono-->
+		<div class="form-group" id="grupo-telefono">
+				<label for="telefono" class="form-label">Telefono :</label>
+			<div class="form-groupInput">
+				<input class="form-input" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono...">
+				<i class="icon-estado fas fa-times-circle"></i>
+			</div>
+			<p class="mensaje-error">Error de telefono vefique que este escrito Correctamente</p>
+		</div>
+
+		<!---Terminos y condiciones-->
+		<div class="group-terminos" id="group-terminos">
+			<label>
+				<input class="form-terminos" type="checkbox" name="terminos" id="terminos">
+				<b> Acepto los Terminos y Condiciones</b>	
+			</label>
+		</div>
+
+		<div class="form-mensaje" id="form-mensaje">
+			<p><i class="fas fa-exclamation-triangle"></i> <b>Error : </b>Rellene Correctamente Todos los Campos.</p>
+		</div>
+
+		<div class="form-group form-boton">
+			<button type="submit" class="form-btn">Enviar</button>
+			<p class="form-exito" id="form-exito"><b>Registrado exitosamente!</b></p>
+		</div>
+
+		</form>
+	</main>
+
+	<script src="../js/codigo.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	
+</body>
+</html>
