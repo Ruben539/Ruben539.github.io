@@ -189,7 +189,8 @@ body {
 
 /* Estilo del Formulario de Probado */
 
-#login .container #login-row #login-column #login-box {
+.inicio {
+  background: #C70009;
   margin-top: 70px;
   max-width: 600px;
   height: 300px;
