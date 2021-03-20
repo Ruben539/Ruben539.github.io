@@ -174,12 +174,6 @@
 
 /* Estilo del Acceso */
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #fff;
-}
-
 #login .container #login-row #login-column #login-box {
   margin-top: 70px;
   max-width: 600px;
@@ -196,6 +190,7 @@ body {
   max-width: 600px;
   height: 300px;
   box-shadow: 2px 2px 2px 2px #343a40;
-  border-radius: 3px;    
+  border-radius: 3px; 
+  color: #fff;   
 }
 
