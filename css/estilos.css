@@ -109,8 +109,12 @@ header nav ul li a.active {
 
 }
 
+.container {
+position: relative;
+}
+
 .inicio {
-  background: #C70009;
+  background: transparent;
   margin-top: 70px;
   max-width: 600px;
   height: 300px;
