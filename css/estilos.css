@@ -93,6 +93,7 @@ header nav ul li a.active {
 		transition: 0.5s;
 	}
 
+
 	header nav.active {
 		left: 0;
 	}
@@ -100,6 +101,10 @@ header nav ul li a.active {
 	header nav ul {
 		display: block;
 		text-align: center;
+	}
+
+	header nav ul li .fa {
+		display :none;
 	}
 
 	header nav ul li a {
