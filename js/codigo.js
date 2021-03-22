@@ -66,8 +66,3 @@ function registro(){
 anchoPagina();
 
 //Scrip del menu
-$(document).ready(function(){
-	$('.menu-toggle').click(function(){
-		$('nav').toggleClass('active')
-	});
-});

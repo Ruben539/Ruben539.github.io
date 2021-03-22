@@ -30,6 +30,12 @@
 	<!--Scrip del menu -->
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<!--Scrip para el codigo del menu-->
-	<script src="../js/codigo.js"></script>
+	<script>
+		$(document).ready(function(){
+	$('.menu-toggle').click(function(){
+		$('nav').toggleClass('active')
+	});
+});
+	</script>
 </body>
 </html>
