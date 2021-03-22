@@ -27,40 +27,47 @@ function anchoPagina(){
 anchoPagina();
 
 function IniciarSesion(){
- if(window.innerWidth > 850){
- formulario_registro.style.display = "none";
- formulario_contenedor.style.left= "10px";
- formulario_login.style.display= "block";
- formulario_cajaRegistro.style.opacity= "1";
- formulario_cajaLogin.style.opacity= "0";
-  }else{
-  formulario_registro.style.display = "none";
- formulario_contenedor.style.left= "0px";
- formulario_login.style.display= "block";
- formulario_cajaRegistro.style.display = "block";
- formulario_cajaLogin.style.display= "none";
-  }
+	if(window.innerWidth > 850){
+		formulario_registro.style.display = "none";
+		formulario_contenedor.style.left= "10px";
+		formulario_login.style.display= "block";
+		formulario_cajaRegistro.style.opacity= "1";
+		formulario_cajaLogin.style.opacity= "0";
+	}else{
+		formulario_registro.style.display = "none";
+		formulario_contenedor.style.left= "0px";
+		formulario_login.style.display= "block";
+		formulario_cajaRegistro.style.display = "block";
+		formulario_cajaLogin.style.display= "none";
+	}
 
 }
 
 anchoPagina();
 
 function registro(){
- if(window.innerWidth > 850){
- formulario_registro.style.display = "block";
- formulario_contenedor.style.left= "410px";
- formulario_login.style.display= "none";
- formulario_cajaRegistro.style.opacity = "0";
- formulario_cajaLogin.style.opacity= "1";
-  }else{ 
- formulario_registro.style.display = "block";
- formulario_contenedor.style.left= "0px";
- formulario_login.style.display= "none";
- formulario_cajaRegistro.style.display = "none";
- formulario_cajaLogin.style.display= "block";
- formulario_cajaLogin.style.opacity = "1";
-  }
+	if(window.innerWidth > 850){
+		formulario_registro.style.display = "block";
+		formulario_contenedor.style.left= "410px";
+		formulario_login.style.display= "none";
+		formulario_cajaRegistro.style.opacity = "0";
+		formulario_cajaLogin.style.opacity= "1";
+	}else{ 
+		formulario_registro.style.display = "block";
+		formulario_contenedor.style.left= "0px";
+		formulario_login.style.display= "none";
+		formulario_cajaRegistro.style.display = "none";
+		formulario_cajaLogin.style.display= "block";
+		formulario_cajaLogin.style.opacity = "1";
+	}
 
 }
 
 anchoPagina();
+
+//Scrip del menu
+$(document).ready(function(){
+	$('.menu-toggle').click(function(){
+		$('nav').toggleClass('active')
+	});
+});
