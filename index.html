@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Login Registro</title>
-    <link href = "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"rel =" stylesheet ">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vista Flex</title>
+	<!--Fuente de Bootstrap para la pagina-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Estilo de Fuente css-->
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-	<main>
-		<div class="container-todo">
+	<div class="container">
+		<div class="navegacion">
+			<ul>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+						<span class="titulo">Inicio</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+						<span class="titulo">Catalogo</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+						<span class="titulo">Mensaje</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+						<span class="titulo">Ayuda</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+						<span class="titulo">Configuración</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+						<span class="titulo">Contraseña</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+						<span class="titulo">Salir</span>
+					</a>
+				</li>
+				
+			</ul>
 
-		<div class="container-trasero">
-
-			<div class="cajatrasera-login">
-				<h3>Ya tienes una cuenta?</h3>
-				<p>Iniciar Sesión</p>
-				<button id="btnInciar-sesion">Iniciar Sesión</button>
-			</div>
-
-			<div class="cajatrasera-registro">
-				<h3>Aun no tienes una cuenta?</h3>
-				<p>Crear Cuenta</p>
-				<button id="btn-registro">Registrarse</button>
-			</div>
-			
-		</div>	
-<!------------Formulario de Accesso------------------------------------------------->
-		<div class="container-registro">
-
-			<form class="formLogin" action="inicio.html">
-				<h2>Iniciar Sesión</h2>
-				<input type="email" name="correo" placeholder="Correo electronico">
-				<input type="password" name="contraseña" placeholder="Contraseña">
-				<button type="submit" id="btn-entrar">Entrar</button> <br><br>
-				<span><a href="">Olvidaste tu Contraseña?</a></span>
-			</form>
-<!------------Formulario de Registro------------------------------------------------>
-			<form action="" class="formRegistro">
-				<h2>Registrarse</h2>
-				<input type="text" name="" placeholder="Nombre completo">
-				<input type="email" name="" placeholder="Correo Electronico">
-				<input type="text" name="" placeholder="Usuario">
-				<input type="password" name="" placeholder="Contraseña">
-				<button type="submit" id="btn-nuevo">Registrarse</button>
-			</form>
 		</div>
-
+		<div class="toggle"></div>
 	</div>
 
-	</main>
-
-	<script src="js/codigo.js"></script>
+	<script>
+		const navegacion = document.querySelector('.navegacion');
+		document.querySelector('.toggle').onclick = function(){
+			this.classList.toggle('activo');
+			navegacion.classList.toggle('activo');
+		}
+	</script>
 </body>
 </html>
