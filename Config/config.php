@@ -2,7 +2,7 @@
 
 //difene("BASE_URL","http://localhost/Tienda%20Virtual/");
 
-const BASE_URL = "ruben539.githug.io";
+const BASE_URL = "ruben539.githug.io/index.php";
 
 const BD_HOST = "localhost";
 const BD_USER = "root";
