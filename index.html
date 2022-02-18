@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -147,12 +148,14 @@
             <img src="images/2-original.png" alt="Ruben Flores image">
             <div class="contact-form">
                 <h4>Enviarme un Mensaje</h4>
-                <form action="" class="form">
-                    <input type="text" name="" id="" placeholder="Nombre">
-                    <input type="email" name="" id="" placeholder="email">
-                    <textarea placeholder="Escribe tu mensaje"></textarea>
-                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
-                </form>
+                <form action="https://formsubmit.co/floresruben380@gmail.com"  Method="POST" class="form">
+                 
+                     <input name="name" required type="text" id="name" placeholder="Juan">
+                     <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
+                     <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                     <button type="submit" class="btn-submit">enviar mensaje</button>
+                 </form>
+                    
             </div>
         </div>
     </div>
@@ -168,5 +171,7 @@
             <i class="fa-solid fa-envelope"></i>
         </div>
     </footer>
+
+ 
 </body>
 </html>
