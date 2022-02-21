@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Noche Efecto Parallax</title>
+	<link rel="stylesheet" href="css/nocheParallax.css">
+</head>
+<body>
+	<header>
+		<a href="" class="logo">Servicios</a>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#" class="activo">Servicios</a></li>
+			<li><a href="#">Clientes</a></li>
+			<li><a href="#">Horarios</a></li>
+		</ul>
+	</header>
+	<section>
+		<img src="img/stars.png" id="star">
+		<img src="img/moon.png" id="moon">
+		<img src="img/mountains_behind.png" id="moun">
+		<h2 id="texto">Noche  Estrellada</h2>
+		<a href="#" id="btn">Explorar</a>
+		<img src="img/mountains_front.png" id="mounfront">
+	</section>
+	<div class="sec" id="sec">
+		<h2>Parallax Efectos</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatibus iusto dignissimos? Ducimus quis facilis harum architecto fugit ipsam eveniet accusantium reiciendis fuga, reprehenderit ad minus facere molestias laboriosam enim Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sint deleniti eaque accusantium dolore error hic repellendus quas tempore veritatis. Nulla, accusantium officia odit quas praesentium laboriosam quo vero dolorem! <br><br> Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Nihil dicta similique delectus. Praesentium, at ducimus doloribus nihil consequuntur, minus? Quam reiciendis nulla, laudantium sed dolorem ducimus repellendus iste tenetur provident. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Sapiente quo accusamus tempora repudiandae, natus labore voluptatum dolorum, possimus error. Suscipit dolorum nisi maiores officiis quae rerum pariatur qui consequuntur ullam.</p>
+	</div>
+
+	<script type="text/javascript">
+		let star = document.getElementById('star');
+		let moon = document.getElementById('moon');
+		let moun = document.getElementById('moun');
+		let texto = document.getElementById('texto');
+		let btn = document.getElementById('btn');
+		let mounfront = document.getElementById('mounfront');
+		let header = document.querySelector('header');
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			star.style.left = value * 0.25 + 'px';
+			moon.style.top = value * 1.05 + 'px';
+			moun.style.top = value * 0.5 + 'px';
+			mounfront.style.top = value * 0 + 'px';
+			texto.style.marginRight = value * 4 + 'px';
+			texto.style.marginTop = value * 1.5 + 'px';
+			btn.style.marginTop = value * 1.5 + 'px';
+			header.style.top = value * 0.5 + 'px';
+		})
+
+	</script>
+</body>
+</html>

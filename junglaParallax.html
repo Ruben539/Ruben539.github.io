@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jungla Efecto Prallax||Efecto Vanilla Javascripts</title>
+	<link rel="stylesheet" href="css/junglaParallax.css">
+</head>
+<body>
+	<header id="header">
+		<a href="#" class="logo">Guarderia La Jungla</a>
+		<ul>
+			<li><a href="#" class="activo">Inicio</a></li>
+			<li><a href="#">Servicios</a></li>
+			<li><a href="#">Clientes</a></li>
+			<li><a href="#">Horarios</a></li>
+		</ul>
+	</header>
+	<section>
+		<h2 id="texto">
+			<span>Es Hora de una nueva</span><br>
+			Aventura
+		</h2>
+		<img src="img/bird1.png" id="bird1">
+		<img src="img/bird2.png" id="bird2">
+		<img src="img/forest.png" id="forest">
+		
+		<a href="#" id="btn">Explorar</a>
+		<img src="img/rocks.png" id="rocks">
+		<img src="img/water.png" id="water">
+	</section>
+	<div class="sec">
+		<h2>Parallax Scroll Efectos</h2>
+		<p>El Parallax (también llamado “Parallax scrolling”) es un efecto de diseño web que consiste en simular el desplazamiento de los objetos de una web a diferentes velocidades y en distintas “capas”. Al crear la ilusión de que hay un fondo y unas figuras en primer plano, consigue engañar a nuestro cerebro para que pensemos que estamos viendo un paisaje en 3D<br><br>El Parallax se basa en un fenómeno de la percepción llamado “paralaje”, que consiste en que la posición de un objeto en el campo visual cambia en función del punto desde donde se observa. Si esto te suena complicado, vamos a hacer un experimento muy sencillo para que lo veas con tus propios ojos:<br><br>
+
+			Escoge un objeto que esté a un par de metros de ti (por ejemplo, un cuadro en la pared o una ventana nos podrían servir).
+			Extiende tu brazo con el pulgar hacia arriba.
+			Tápate el ojo izquierdo y observa la posición de tu pulgar en relación al objeto de referencia del fondo.
+			Ahora tápate el ojo derecho y observa cómo cambia… ¡sorpresa!
+			La técnica de animación en Parallax en sí no es nada nuevo, ya que se usaba en películas de animación e incluso en videojuegos ochenteros. Pero hasta hace poco no había saltado a las páginas web.<br><br>
+
+			Para los marketers, el Parallax es un recurso muy útil para mejorar el atractivo de las páginas web y animar a los usuarios a quedarse más tiempo e interactuar con ellas. Dado que el efecto se manifiesta al hacer scroll, los usuarios tienen un incentivo extra para navegar. Además, resulta muy apropiado para pantallas verticales, como las de los móviles.<br><br>
+
+
+
+			Cómo implementar Parallax en tus webs
+		Diseñar un sitio con Parallax scrolling puede ser un proceso largo y complicado, que requiere conocimientos avanzados de CSS, Javascript y diseño web. Pero antes de que salgas corriendo, debes saber que esta labor puede ser mucho más fácil gracias a los plugins especializados en este tipo de efectos.</p>
+	</div>
+
+	<script type="text/javascript">
+		let  texto = document.getElementById('texto');
+		let  bird1 = document.getElementById('bird1');
+		let  bird2 = document.getElementById('bird2');
+		let  btn = document.getElementById('btn');
+		let  rocks = document.getElementById('rocks');
+		let  forest = document.getElementById('forest');
+		let  water = document.getElementById('water');
+		let  header = document.getElementById('header');
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+
+			texto.style.top = 50 + value * -0.5 + '%';
+			bird1.style.top = value * -1.5 + 'px';
+			bird1.style.left = value * 2 + 'px';
+			bird2.style.top = value * -1.5 + 'px';
+			bird2.style.left = value * -5 + 'px';
+			btn.style.marginTop = value * 1.5 + 'px';
+			rocks.style.top = value * -0.12 + 'px';
+			forest.style.top = value * -0.25 + 'px';
+			header.style.top = value * -0.5 + 'px';
+		});
+	</script>
+</body>
+</html>
