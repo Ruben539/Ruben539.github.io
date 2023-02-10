@@ -17,8 +17,10 @@ body {
 .galeria img {
      box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
      border-radius: 15px;
-     width: auto;
+     width: 400px;
      height: 400px;
+     align-items: center;
+     justify-content: center;
 }
 
 .materialbox-caption {
@@ -36,7 +38,7 @@ body {
 }
 
 .galeria .col {
-     margin-bottom: 20px;
+     margin-bottom: 15px;
 }
 
 @media screen and (max-width: 600px){
